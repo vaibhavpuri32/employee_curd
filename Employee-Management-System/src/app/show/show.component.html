@@ -1,0 +1,59 @@
+<div class="container">
+  <form class=" well form-horizontal" *ngIf=employee>
+    <fieldset>
+      <legend>
+        <h2><b>Details </b></h2>
+      </legend><br>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="emp_name">Employee's Full Name :</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <p class="form-control">{{employee.name}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="position">Job Position :</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+            <p class="form-control">{{employee.position}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="department">Department Name :</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+            <p class="form-control">{{employee.department}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="salary">Salary :</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-euro"></i></span>
+            <p class="form-control">{{employee.salary}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="id">Employee's ID :</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <p class="form-control">{{employee._id}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+          <a class="btn btn-success" (click)="goBack()">Go Back</a>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
